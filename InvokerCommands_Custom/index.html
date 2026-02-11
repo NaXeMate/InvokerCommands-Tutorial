@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvokerCommands Demo - Custom Commands</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="page-body">
+    <!-- Main container -->
+    <div class="container">
+        <h1>Custom Commands Demo</h1>
+        <p class="subtitle">Click a button to change the background</p>
+        
+        <div class="button-group">
+            <button commandfor="page-body" command="--change-background" value="purple" class="btn btn-purple">
+                Purple Gradient
+            </button>
+            <button commandfor="page-body" command="--change-background" value="ocean" class="btn btn-ocean">
+                Ocean Gradient
+            </button>
+            <button commandfor="page-body" command="--change-background" value="sunset" class="btn btn-sunset">
+                Sunset Gradient
+            </button>
+            <button commandfor="page-body" command="--change-background" value="forest" class="btn btn-forest">
+                Forest Gradient
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

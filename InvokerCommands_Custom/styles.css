@@ -1,0 +1,112 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    transition: background 0.8s ease;
+}
+
+/* Background variants */
+body.bg-purple {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.bg-ocean {
+    background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+}
+
+body.bg-sunset {
+    background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 50%, #2BFF88 100%);
+}
+
+body.bg-forest {
+    background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Button group */
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main buttons */
+.btn {
+    padding: 1.2rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-purple {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.btn-ocean {
+    background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.btn-sunset {
+    background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 100%);
+}
+
+.btn-forest {
+    background: linear-gradient(135deg, #0F2027 0%, #2C5364 100%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .button-group {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    
+    .container h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+}
