@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvokerCommands Demo - Modal Dialog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main button container -->
+    <div class="container">
+        <h1>InvokerCommands Demo</h1>
+        <button commandfor="modal-dialog" command="show-modal" class="btn btn-modal">
+            Open Modal Dialog
+        </button>
+    </div>
+
+    <!-- Modal Dialog -->
+    <dialog id="modal-dialog" class="dialog">
+        <div class="dialog-content">
+            <h2>Modal Dialog</h2>
+            <p>This is a <strong>modal</strong> dialog. You cannot interact with the background until you close this.</p>
+            <p>Try pressing ESC or using the Close Button.</p>
+            <button commandfor="modal-dialog" command="close" class="btn-close">
+                Close
+            </button>
+        </div>
+    </dialog>
+</body>
+</html>
